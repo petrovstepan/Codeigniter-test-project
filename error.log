@@ -1,0 +1,159 @@
+[Fri Nov 24 01:03:17.232036 2017] [:error] [pid 55108] [client 127.0.0.1:50443] script '/Users/Stepan/Sites/Codeigniter/index.php.blog' not found or unable to stat
+[Fri Nov 24 17:27:59.618689 2017] [:error] [pid 54874] [client 127.0.0.1:53932] PHP Fatal error:  Call to a member function index() on null in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 20
+[Fri Nov 24 17:27:59.621812 2017] [:error] [pid 54874] [client 127.0.0.1:53932] PHP Stack trace:
+[Fri Nov 24 17:27:59.621854 2017] [:error] [pid 54874] [client 127.0.0.1:53932] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Fri Nov 24 17:27:59.621868 2017] [:error] [pid 54874] [client 127.0.0.1:53932] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Fri Nov 24 17:27:59.621881 2017] [:error] [pid 54874] [client 127.0.0.1:53932] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Fri Nov 24 17:27:59.621895 2017] [:error] [pid 54874] [client 127.0.0.1:53932] PHP   4. BookController->index() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Fri Nov 24 17:48:24.743142 2017] [:error] [pid 56448] [client 127.0.0.1:54034] PHP Parse error:  syntax error, unexpected 'find' (T_STRING), expecting variable (T_VARIABLE) in /Users/Stepan/Sites/Codeigniter/application/models/Book.php on line 41
+[Fri Nov 24 17:48:24.747995 2017] [:error] [pid 56448] [client 127.0.0.1:54034] PHP Stack trace:
+[Fri Nov 24 17:48:24.748096 2017] [:error] [pid 56448] [client 127.0.0.1:54034] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Fri Nov 24 17:48:24.748130 2017] [:error] [pid 56448] [client 127.0.0.1:54034] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Fri Nov 24 17:48:24.748180 2017] [:error] [pid 56448] [client 127.0.0.1:54034] PHP   3. BookController->__construct() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:518
+[Fri Nov 24 17:48:24.748202 2017] [:error] [pid 56448] [client 127.0.0.1:54034] PHP   4. CI_Loader->model() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:15
+[Fri Nov 24 17:49:00.428544 2017] [:error] [pid 54862] [client 127.0.0.1:54035] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /Users/Stepan/Sites/Codeigniter/application/models/Book.php on line 41
+[Fri Nov 24 17:49:00.431118 2017] [:error] [pid 54862] [client 127.0.0.1:54035] PHP Stack trace:
+[Fri Nov 24 17:49:00.431209 2017] [:error] [pid 54862] [client 127.0.0.1:54035] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Fri Nov 24 17:49:00.431330 2017] [:error] [pid 54862] [client 127.0.0.1:54035] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Fri Nov 24 17:49:00.431357 2017] [:error] [pid 54862] [client 127.0.0.1:54035] PHP   3. BookController->__construct() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:518
+[Fri Nov 24 17:49:00.431378 2017] [:error] [pid 54862] [client 127.0.0.1:54035] PHP   4. CI_Loader->model() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:15
+[Fri Nov 24 17:50:15.453575 2017] [:error] [pid 55106] [client 127.0.0.1:54053] PHP Parse error:  syntax error, unexpected ';' in /Users/Stepan/Sites/Codeigniter/application/models/Book.php on line 43
+[Fri Nov 24 17:50:15.455870 2017] [:error] [pid 55106] [client 127.0.0.1:54053] PHP Stack trace:
+[Fri Nov 24 17:50:15.455962 2017] [:error] [pid 55106] [client 127.0.0.1:54053] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Fri Nov 24 17:50:15.455987 2017] [:error] [pid 55106] [client 127.0.0.1:54053] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Fri Nov 24 17:50:15.456018 2017] [:error] [pid 55106] [client 127.0.0.1:54053] PHP   3. BookController->__construct() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:518
+[Fri Nov 24 17:50:15.456039 2017] [:error] [pid 55106] [client 127.0.0.1:54053] PHP   4. CI_Loader->model() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:15
+[Fri Nov 24 20:30:46.856210 2017] [:error] [pid 55106] [client 127.0.0.1:61971] PHP Fatal error:  Call to undefined method CI_DB_pdo_result::join() in /Users/Stepan/Sites/Codeigniter/application/models/Book.php on line 67
+[Fri Nov 24 20:30:46.858330 2017] [:error] [pid 55106] [client 127.0.0.1:61971] PHP Stack trace:
+[Fri Nov 24 20:30:46.859713 2017] [:error] [pid 55106] [client 127.0.0.1:61971] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Fri Nov 24 20:30:46.859808 2017] [:error] [pid 55106] [client 127.0.0.1:61971] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Fri Nov 24 20:30:46.859825 2017] [:error] [pid 55106] [client 127.0.0.1:61971] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Fri Nov 24 20:30:46.859839 2017] [:error] [pid 55106] [client 127.0.0.1:61971] PHP   4. BookController->index() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Fri Nov 24 20:30:46.859851 2017] [:error] [pid 55106] [client 127.0.0.1:61971] PHP   5. Book->all() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:23
+[Fri Nov 24 21:32:41.437554 2017] [:error] [pid 55108] [client 127.0.0.1:63428] PHP Parse error:  syntax error, unexpected '(', expecting ',' or ';' in /Users/Stepan/Sites/Codeigniter/application/models/Book.php on line 15
+[Fri Nov 24 21:32:41.440742 2017] [:error] [pid 55108] [client 127.0.0.1:63428] PHP Stack trace:
+[Fri Nov 24 21:32:41.440947 2017] [:error] [pid 55108] [client 127.0.0.1:63428] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Fri Nov 24 21:32:41.440980 2017] [:error] [pid 55108] [client 127.0.0.1:63428] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Fri Nov 24 21:32:41.440991 2017] [:error] [pid 55108] [client 127.0.0.1:63428] PHP   3. BookController->__construct() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:518
+[Fri Nov 24 21:32:41.440999 2017] [:error] [pid 55108] [client 127.0.0.1:63428] PHP   4. CI_Loader->model() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:15
+[Fri Nov 24 21:56:29.931042 2017] [:error] [pid 54874] [client 127.0.0.1:63533] PHP Parse error:  syntax error, unexpected ']' in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 22
+[Fri Nov 24 21:56:29.934241 2017] [:error] [pid 54874] [client 127.0.0.1:63533] PHP Stack trace:
+[Fri Nov 24 21:56:29.934295 2017] [:error] [pid 54874] [client 127.0.0.1:63533] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Fri Nov 24 21:56:29.934320 2017] [:error] [pid 54874] [client 127.0.0.1:63533] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Sat Nov 25 00:49:12.079073 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP Fatal error:  Function name must be a string in /Users/Stepan/Sites/Codeigniter/application/views/book/form.php on line 2
+[Sat Nov 25 00:49:12.080989 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP Stack trace:
+[Sat Nov 25 00:49:12.081019 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Sat Nov 25 00:49:12.081042 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Sat Nov 25 00:49:12.081051 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Sat Nov 25 00:49:12.081060 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP   4. BookController->create() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Sat Nov 25 00:49:12.081067 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP   5. CI_Loader->view() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:34
+[Sat Nov 25 00:49:12.081074 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP   6. CI_Loader->_ci_load() /Users/Stepan/Sites/Codeigniter/system/core/Loader.php:489
+[Sat Nov 25 00:49:12.081094 2017] [:error] [pid 55108] [client 127.0.0.1:65348] PHP   7. include() /Users/Stepan/Sites/Codeigniter/system/core/Loader.php:962
+[Sat Nov 25 02:49:24.578924 2017] [:error] [pid 54862] [client 127.0.0.1:50130] PHP Parse error:  syntax error, unexpected 'continue' (T_CONTINUE) in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 47
+[Sat Nov 25 02:49:24.582628 2017] [:error] [pid 54862] [client 127.0.0.1:50130] PHP Stack trace:
+[Sat Nov 25 02:49:24.582691 2017] [:error] [pid 54862] [client 127.0.0.1:50130] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Sat Nov 25 02:49:24.582730 2017] [:error] [pid 54862] [client 127.0.0.1:50130] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Sat Nov 25 02:49:25.167346 2017] [:error] [pid 55107] [client 127.0.0.1:50131] PHP Parse error:  syntax error, unexpected 'continue' (T_CONTINUE) in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 47
+[Sat Nov 25 02:49:25.170770 2017] [:error] [pid 55107] [client 127.0.0.1:50131] PHP Stack trace:
+[Sat Nov 25 02:49:25.170849 2017] [:error] [pid 55107] [client 127.0.0.1:50131] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Sat Nov 25 02:49:25.170865 2017] [:error] [pid 55107] [client 127.0.0.1:50131] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Sat Nov 25 02:50:26.828768 2017] [:error] [pid 54874] [client 127.0.0.1:50132] PHP Parse error:  syntax error, unexpected 'continue' (T_CONTINUE) in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 47
+[Sat Nov 25 02:50:26.829374 2017] [:error] [pid 54874] [client 127.0.0.1:50132] PHP Stack trace:
+[Sat Nov 25 02:50:26.829406 2017] [:error] [pid 54874] [client 127.0.0.1:50132] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Sat Nov 25 02:50:26.829419 2017] [:error] [pid 54874] [client 127.0.0.1:50132] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Sat Nov 25 03:04:16.154826 2017] [:error] [pid 54874] [client 127.0.0.1:50245] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 74
+[Sat Nov 25 03:04:16.155431 2017] [:error] [pid 54874] [client 127.0.0.1:50245] PHP Stack trace:
+[Sat Nov 25 03:04:16.155490 2017] [:error] [pid 54874] [client 127.0.0.1:50245] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Sat Nov 25 03:04:16.155526 2017] [:error] [pid 54874] [client 127.0.0.1:50245] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Sat Nov 25 03:41:18.817132 2017] [:error] [pid 54862] [client 127.0.0.1:50604] PHP Parse error:  syntax error, unexpected '?>' in /Users/Stepan/Sites/Codeigniter/application/views/book/form.php on line 5
+[Sat Nov 25 03:41:18.835511 2017] [:error] [pid 54862] [client 127.0.0.1:50604] PHP Stack trace:
+[Sat Nov 25 03:41:18.835589 2017] [:error] [pid 54862] [client 127.0.0.1:50604] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Sat Nov 25 03:41:18.835606 2017] [:error] [pid 54862] [client 127.0.0.1:50604] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Sat Nov 25 03:41:18.835619 2017] [:error] [pid 54862] [client 127.0.0.1:50604] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Sat Nov 25 03:41:18.835633 2017] [:error] [pid 54862] [client 127.0.0.1:50604] PHP   4. BookController->edit() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Sat Nov 25 03:41:18.835645 2017] [:error] [pid 54862] [client 127.0.0.1:50604] PHP   5. CI_Loader->view() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:77
+[Sat Nov 25 03:41:18.835657 2017] [:error] [pid 54862] [client 127.0.0.1:50604] PHP   6. CI_Loader->_ci_load() /Users/Stepan/Sites/Codeigniter/system/core/Loader.php:489
+[Sat Nov 25 10:02:55.761640 2017] [:error] [pid 55107] [client 127.0.0.1:54282] PHP Parse error:  syntax error, unexpected '<' in /Users/Stepan/Sites/Codeigniter/application/views/book/form.php on line 29
+[Sat Nov 25 10:02:55.765097 2017] [:error] [pid 55107] [client 127.0.0.1:54282] PHP Stack trace:
+[Sat Nov 25 10:02:55.767937 2017] [:error] [pid 55107] [client 127.0.0.1:54282] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Sat Nov 25 10:02:55.767982 2017] [:error] [pid 55107] [client 127.0.0.1:54282] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Sat Nov 25 10:02:55.767996 2017] [:error] [pid 55107] [client 127.0.0.1:54282] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Sat Nov 25 10:02:55.768011 2017] [:error] [pid 55107] [client 127.0.0.1:54282] PHP   4. BookController->create() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532
+[Sat Nov 25 10:02:55.768023 2017] [:error] [pid 55107] [client 127.0.0.1:54282] PHP   5. CI_Loader->view() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:31
+[Sat Nov 25 10:02:55.768035 2017] [:error] [pid 55107] [client 127.0.0.1:54282] PHP   6. CI_Loader->_ci_load() /Users/Stepan/Sites/Codeigniter/system/core/Loader.php:489
+[Sat Nov 25 11:50:59.641320 2017] [:error] [pid 54862] [client 127.0.0.1:59108] PHP Parse error:  syntax error, unexpected ':' in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 158, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 11:50:59.646838 2017] [:error] [pid 54862] [client 127.0.0.1:59108] PHP Stack trace:, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 11:50:59.646907 2017] [:error] [pid 54862] [client 127.0.0.1:59108] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 11:50:59.646947 2017] [:error] [pid 54862] [client 127.0.0.1:59108] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 11:51:20.944841 2017] [:error] [pid 55106] [client 127.0.0.1:59109] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 158, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 11:51:20.948490 2017] [:error] [pid 55106] [client 127.0.0.1:59109] PHP Stack trace:, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 11:51:20.948540 2017] [:error] [pid 55106] [client 127.0.0.1:59109] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 11:51:20.948556 2017] [:error] [pid 55106] [client 127.0.0.1:59109] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 11:55:44.161202 2017] [:error] [pid 54875] [client 127.0.0.1:59417] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /Users/Stepan/Sites/Codeigniter/application/views/book/form.php on line 25, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:55:44.162898 2017] [:error] [pid 54875] [client 127.0.0.1:59417] PHP Stack trace:, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:55:44.162959 2017] [:error] [pid 54875] [client 127.0.0.1:59417] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:55:44.162972 2017] [:error] [pid 54875] [client 127.0.0.1:59417] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:55:44.162982 2017] [:error] [pid 54875] [client 127.0.0.1:59417] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:55:44.163005 2017] [:error] [pid 54875] [client 127.0.0.1:59417] PHP   4. BookController->edit() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:55:44.163015 2017] [:error] [pid 54875] [client 127.0.0.1:59417] PHP   5. CI_Loader->view() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:65, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:55:44.163024 2017] [:error] [pid 54875] [client 127.0.0.1:59417] PHP   6. CI_Loader->_ci_load() /Users/Stepan/Sites/Codeigniter/system/core/Loader.php:489, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:56:05.953061 2017] [:error] [pid 55108] [client 127.0.0.1:59744] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /Users/Stepan/Sites/Codeigniter/application/views/book/form.php on line 25, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:56:05.965599 2017] [:error] [pid 55108] [client 127.0.0.1:59744] PHP Stack trace:, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:56:05.965662 2017] [:error] [pid 55108] [client 127.0.0.1:59744] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:56:05.965678 2017] [:error] [pid 55108] [client 127.0.0.1:59744] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:56:05.965692 2017] [:error] [pid 55108] [client 127.0.0.1:59744] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:56:05.965706 2017] [:error] [pid 55108] [client 127.0.0.1:59744] PHP   4. BookController->edit() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:56:05.965719 2017] [:error] [pid 55108] [client 127.0.0.1:59744] PHP   5. CI_Loader->view() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:65, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:56:05.965732 2017] [:error] [pid 55108] [client 127.0.0.1:59744] PHP   6. CI_Loader->_ci_load() /Users/Stepan/Sites/Codeigniter/system/core/Loader.php:489, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:18.443738 2017] [:error] [pid 55106] [client 127.0.0.1:59748] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /Users/Stepan/Sites/Codeigniter/application/views/book/form.php on line 25, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:18.450307 2017] [:error] [pid 55106] [client 127.0.0.1:59748] PHP Stack trace:, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:18.450352 2017] [:error] [pid 55106] [client 127.0.0.1:59748] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:18.450438 2017] [:error] [pid 55106] [client 127.0.0.1:59748] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:18.450688 2017] [:error] [pid 55106] [client 127.0.0.1:59748] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:18.450751 2017] [:error] [pid 55106] [client 127.0.0.1:59748] PHP   4. BookController->edit() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:18.450772 2017] [:error] [pid 55106] [client 127.0.0.1:59748] PHP   5. CI_Loader->view() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:65, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:18.450787 2017] [:error] [pid 55106] [client 127.0.0.1:59748] PHP   6. CI_Loader->_ci_load() /Users/Stepan/Sites/Codeigniter/system/core/Loader.php:489, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:41.876485 2017] [:error] [pid 56448] [client 127.0.0.1:59784] PHP Parse error:  syntax error, unexpected ')' in /Users/Stepan/Sites/Codeigniter/application/views/book/form.php on line 25, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:41.904425 2017] [:error] [pid 56448] [client 127.0.0.1:59784] PHP Stack trace:, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:41.904602 2017] [:error] [pid 56448] [client 127.0.0.1:59784] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:41.904622 2017] [:error] [pid 56448] [client 127.0.0.1:59784] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:41.904657 2017] [:error] [pid 56448] [client 127.0.0.1:59784] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:41.904672 2017] [:error] [pid 56448] [client 127.0.0.1:59784] PHP   4. BookController->edit() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:41.904685 2017] [:error] [pid 56448] [client 127.0.0.1:59784] PHP   5. CI_Loader->view() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:65, referer: http://codeignitertest.loc/books
+[Sat Nov 25 11:57:41.904697 2017] [:error] [pid 56448] [client 127.0.0.1:59784] PHP   6. CI_Loader->_ci_load() /Users/Stepan/Sites/Codeigniter/system/core/Loader.php:489, referer: http://codeignitertest.loc/books
+[Sat Nov 25 13:54:46.360100 2017] [:error] [pid 55108] [client 127.0.0.1:62349] PHP Parse error:  syntax error, unexpected '=' in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 104, referer: http://codeignitertest.loc/books
+[Sat Nov 25 13:54:46.366360 2017] [:error] [pid 55108] [client 127.0.0.1:62349] PHP Stack trace:, referer: http://codeignitertest.loc/books
+[Sat Nov 25 13:54:46.366418 2017] [:error] [pid 55108] [client 127.0.0.1:62349] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books
+[Sat Nov 25 13:54:46.366435 2017] [:error] [pid 55108] [client 127.0.0.1:62349] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books
+[Sat Nov 25 14:14:24.311455 2017] [:error] [pid 55107] [client 127.0.0.1:62474] PHP Fatal error:  Call to a member function select() on null in /Users/Stepan/Sites/Codeigniter/application/models/Book.php on line 33, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:14:24.317620 2017] [:error] [pid 55107] [client 127.0.0.1:62474] PHP Stack trace:, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:14:24.317712 2017] [:error] [pid 55107] [client 127.0.0.1:62474] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:14:24.317732 2017] [:error] [pid 55107] [client 127.0.0.1:62474] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:14:24.317746 2017] [:error] [pid 55107] [client 127.0.0.1:62474] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:14:24.317760 2017] [:error] [pid 55107] [client 127.0.0.1:62474] PHP   4. BookController->store() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:14:24.317773 2017] [:error] [pid 55107] [client 127.0.0.1:62474] PHP   5. Book->unique() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:48, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:14:24.317785 2017] [:error] [pid 55107] [client 127.0.0.1:62474] PHP   6. Book->find() /Users/Stepan/Sites/Codeigniter/application/models/Book.php:96, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:10.950668 2017] [:error] [pid 55108] [client 127.0.0.1:62478] PHP Fatal error:  Call to a member function select() on null in /Users/Stepan/Sites/Codeigniter/application/models/Book.php on line 33, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:10.955983 2017] [:error] [pid 55108] [client 127.0.0.1:62478] PHP Stack trace:, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:10.956073 2017] [:error] [pid 55108] [client 127.0.0.1:62478] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:10.956102 2017] [:error] [pid 55108] [client 127.0.0.1:62478] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:10.956141 2017] [:error] [pid 55108] [client 127.0.0.1:62478] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:10.956155 2017] [:error] [pid 55108] [client 127.0.0.1:62478] PHP   4. BookController->store() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:10.956168 2017] [:error] [pid 55108] [client 127.0.0.1:62478] PHP   5. Book->unique() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:48, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:10.956180 2017] [:error] [pid 55108] [client 127.0.0.1:62478] PHP   6. Book->find() /Users/Stepan/Sites/Codeigniter/application/models/Book.php:96, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:38.739151 2017] [:error] [pid 69130] [client 127.0.0.1:62480] PHP Fatal error:  Call to a member function select() on null in /Users/Stepan/Sites/Codeigniter/application/models/Book.php on line 33, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:38.739862 2017] [:error] [pid 69130] [client 127.0.0.1:62480] PHP Stack trace:, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:38.739927 2017] [:error] [pid 69130] [client 127.0.0.1:62480] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:38.739944 2017] [:error] [pid 69130] [client 127.0.0.1:62480] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:38.739958 2017] [:error] [pid 69130] [client 127.0.0.1:62480] PHP   3. call_user_func_array:{/Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532}() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:38.739972 2017] [:error] [pid 69130] [client 127.0.0.1:62480] PHP   4. BookController->store() /Users/Stepan/Sites/Codeigniter/system/core/CodeIgniter.php:532, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:38.739985 2017] [:error] [pid 69130] [client 127.0.0.1:62480] PHP   5. Book->unique() /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php:48, referer: http://codeignitertest.loc/books/create
+[Sat Nov 25 14:16:38.739997 2017] [:error] [pid 69130] [client 127.0.0.1:62480] PHP   6. Book->find() /Users/Stepan/Sites/Codeigniter/application/models/Book.php:96, referer: http://codeignitertest.loc/books/create
+[Mon Nov 27 01:56:31.132047 2017] [:error] [pid 72548] [client 127.0.0.1:61616] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 185
+[Mon Nov 27 01:56:31.161671 2017] [:error] [pid 72548] [client 127.0.0.1:61616] PHP Stack trace:
+[Mon Nov 27 01:56:31.168797 2017] [:error] [pid 72548] [client 127.0.0.1:61616] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Mon Nov 27 01:56:31.168919 2017] [:error] [pid 72548] [client 127.0.0.1:61616] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
+[Mon Nov 27 01:57:09.847868 2017] [:error] [pid 72553] [client 127.0.0.1:61772] PHP Parse error:  syntax error, unexpected '{' in /Users/Stepan/Sites/Codeigniter/application/controllers/BookController.php on line 185
+[Mon Nov 27 01:57:09.852491 2017] [:error] [pid 72553] [client 127.0.0.1:61772] PHP Stack trace:
+[Mon Nov 27 01:57:09.852531 2017] [:error] [pid 72553] [client 127.0.0.1:61772] PHP   1. {main}() /Users/Stepan/Sites/Codeigniter/index.php:0
+[Mon Nov 27 01:57:09.852541 2017] [:error] [pid 72553] [client 127.0.0.1:61772] PHP   2. require_once() /Users/Stepan/Sites/Codeigniter/index.php:315
