@@ -68,6 +68,7 @@ class BookController extends CI_Controller
     {
         $this->db->trans_start();
 
+        // Второй параметр в значении TRUE применяет XSS фильрацию ко всем элементам массива
         $data = $this->input->post(NULL, TRUE);
 
         $processedData = $this->processPostData($data);
