@@ -15,9 +15,6 @@ class Genre extends CI_Model
      */
     public $table;
 
-    /**
-     * Конструктор класса Genre
-     */
     public function __construct()
     {
         parent::__construct();
@@ -51,11 +48,11 @@ class Genre extends CI_Model
      */
     public function findOrNew(array $param)
     {
-        $author = $this->find($param);
+        $obj = $this->find($param);
 
-        if ($author !== null)
+        if ($obj !== null)
         {
-            return $author;
+            return $obj;
         }
 
         $this->insert($param);

@@ -10,7 +10,7 @@
 class BookController extends CI_Controller
 {
     /**
-     * Переменная содержит названия входящих POST параметров, которые должны быть обработаны
+     * Переменная содержит названия входящих POST параметров, которые должны быть обработаны как внешние ключи
      * @var array
      */
     public $foreignKeys = ['genre', 'author'];
@@ -146,7 +146,6 @@ class BookController extends CI_Controller
 
         $id = (int) $id;
         $book = $this->book->find($id);
-        $this->book->id = $id;
 
         if ($book === null)
         {
@@ -159,9 +158,9 @@ class BookController extends CI_Controller
         $processedData['id'] = $id;
 
 
-        if ($this->book->unique($processedData[$this->book->unique]) === false)
+        if ($this->book->unique($processedData[$this->book->unique], $id) === false)
         {
-            return $this->returnWithStatus('409 Expectation Failed');
+            return $this->returnWithStatus('409 Conflict');
         }
 
         $row = $this->book->save($processedData);
@@ -281,21 +280,6 @@ class BookController extends CI_Controller
             $obj = $this->$key->findOrNew([$key => $data[$key]]);
             $data["{$key}_id"] = $obj->id;
             unset($data[$key]);
-        }
-
-        return $data;
-    }
-
-    private function getFillbale(array $data, array $fillable = null)
-    {
-        $fillable = ($fillable === null) ? $this->book->fillable : $fillable;
-
-        foreach($data as $key => $value)
-        {
-            if (in_array($key, $fillable) === false)
-            {
-                unset($data[$key]);
-            }
         }
 
         return $data;

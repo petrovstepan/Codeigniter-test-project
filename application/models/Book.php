@@ -8,21 +8,30 @@
 
 class Book extends CI_Model
 {
-    public $fillable = ['title', 'genre', 'genre_id', 'author', 'author_id', 'year'];
+    /**
+     * Переменная содержит название поля таблицы, которое должно быть уникальным
+     * @var string
+     */
     public $unique = 'title';
-    public $id = null;
+
+    /**
+     * Переменная содержит название таблицы БД, которую представляет модель
+     * Вида {имя класса с маленькой буквы}s
+     * @var string
+     */
+    public $table;
 
     public function __construct()
     {
         parent::__construct();
 
         $this->table = strtolower(__CLASS__) . 's';
-
     }
 
     /**
-     * @param $id
-     * @param null $table
+     * Фунция ищет запись в таблице по $id или другому параметру
+     *
+     * @param int / array $param
      * @return StClass / null
      */
     public function find($param)
@@ -41,6 +50,11 @@ class Book extends CI_Model
         return (count($query) !== 0) ? $query[0] : null;
     }
 
+    /**
+     * Функция возвращает все записи из таблицы
+     *
+     * @return array[stdClass / empty]
+     */
     public function all()
     {
         $table = $this->table;
@@ -51,14 +65,25 @@ class Book extends CI_Model
             ->join('authors', 'books.author_id = authors.id')
             ->get($table)
             ->result();
-
     }
 
-    public function save($array)
+    /**
+     * Функция сохраняет запись в таблице, выбираея метод вставки или обновления
+     *
+     * @param $array
+     * @return mixed
+     */
+    public function save(array $array)
     {
         return (isset($array['id'])) ? $this->update($array) : $this->insert($array);
     }
 
+    /**
+     * Функция обновляет запись в таблице
+     *
+     * @param array $data
+     * @return int (affected_rows)
+     */
     public function update(array $data)
     {
         $table = $this->table;
@@ -71,6 +96,12 @@ class Book extends CI_Model
 
     }
 
+    /**
+     * Функция вставляет запись в таблицу
+     *
+     * @param array $data[string $title, string $author, string $genre, int $year]
+     * @return int (affected_rows)
+     */
     public function insert($data)
     {
         $table = $this->table;
@@ -79,6 +110,12 @@ class Book extends CI_Model
         return $this->db->affected_rows();
     }
 
+    /**
+     * Функция удаляет запись из таблицы
+     *
+     * @param int $id
+     * @return int (affected rows)
+     */
     public function delete($id)
     {
         $table = $this->table;
@@ -89,14 +126,19 @@ class Book extends CI_Model
             ->delete($table);
 
         return $this->db->affected_rows();
-
     }
 
-    public function unique($field)
+    /**
+     * Функция проверяет, является ли значение уникальным в таблице
+     *
+     * @param string $field, int $id
+     * @return bool
+     */
+    public function unique($field, $id = 0)
     {
         $obj = $this->find([$this->unique => $field]);
 
-        return ($obj === null) || ($this->id === (int) $obj->id);
+        return ($obj === null) || ($id === (int) $obj->id);
     }
 
 }
