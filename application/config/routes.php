@@ -58,7 +58,7 @@ $route['books/index']['GET'] = 'BookController/index';
 $route['books/create']['GET'] = 'BookController/create';
 $route['books']['POST'] = 'BookController/store';
 $route['books/(:num)/edit']['GET'] = 'BookController/edit/$1';
-// Ниже желательно использовать PUT
+// Ниже желательно использовать PUT и DELETE
 $route['books/(:num)']['POST'] = 'BookController/update/$1';
 $route['books/(:num)/delete']['GET'] = 'BookController/destroy/$1';
 
